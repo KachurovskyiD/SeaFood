@@ -1,0 +1,85 @@
+.poster {
+  background-image: url('../img/poster-bg.png');
+  min-height: 945px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__row {
+    padding-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-family: @fontOswald;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  &__title-bot {
+    font-size: 110px;
+    line-height: 1.1;
+
+    span {
+      color: #ED421C;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 1.4;
+    padding-top: 10px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .poster {
+    min-height: 585px;
+
+    &__row {
+      padding-top: 150px;
+      padding-left: 3%;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__title-bot {
+      font-size: 60px;
+    }
+
+    &__subtitle {
+      font-size: 17px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .poster {
+    min-height: 565px;
+
+    &__title {
+      font-size: 25px;
+    }
+
+    &__title-bot {
+      font-size: 40px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      padding-bottom: 40px;
+      padding-top: 20px;
+    }
+  }
+}

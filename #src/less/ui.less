@@ -1,0 +1,112 @@
+.main_body {
+  font-family: @fontFamily;
+  font-weight: 400;
+  font-size: 16px;
+  color: #010101;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container {
+  padding: 110px 10px;
+  max-width: 1180px;
+  margin: 0px auto;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  background-color: @orangeColor;
+  padding: 20px 25px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: @orangeHover;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-family: @fontOswald;
+  color: @orangeColor;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-family: @fontOswald;
+  color: #010101;
+  line-height: 1.2;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-weight: 400;
+  color: #010101;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.decoration {
+  margin-top: 10px;
+}
+
+@media (max-width: 1040px) {
+  .btn {
+    font-size: 13px;
+    padding: 15px;
+  }
+
+  .container {
+    padding: 50px 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 25px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 35px 10px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 27px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
