@@ -1,3 +1,150 @@
-@media (max-width: 1040px) {}
+.team {
 
-@media (max-width: 767px) {}
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__cards {
+    padding: 45px 15px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2.5%;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__photo {
+    padding-bottom: 30px;
+    opacity: 0.6;
+    max-width: 270px;
+
+    img {
+      max-width: 100%;
+      box-shadow: 5px -5px 7px 0px rgba(50, 50, 50, 0.27);
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+
+  &__name {
+    padding-bottom: 40px;
+    font-weight: 500;
+    color: #010101;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &_position {
+    padding-bottom: 20px;
+    font-weight: 500;
+    color: #777777;
+    font-size: 18px;
+    line-height: 0.9;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 1px;
+      background-color: @orangeColor;
+      position: relative;
+      top: -20px;
+      left: 40%;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon-wrapper {
+    display: block;
+    margin: 0 7px;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 48px;
+    color: #ffffff;
+    background-color: @orangeColor;
+    text-align: center;
+    line-height: 1.7;
+
+    &:hover {
+      background-color: @orangeHover;
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .team {
+
+    &__name {
+      padding-bottom: 20px;
+      font-size: 15px;
+    }
+
+    &_position {
+      padding-bottom: 10px;
+      font-size: 14px;
+
+      &::before {
+        top: -10px;
+      }
+    }
+
+    &__icon-wrapper {
+      margin: 0 4px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .team {
+
+    &__cards {
+      padding: 30px 5px 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 4%;
+    }
+
+    &__card {
+      margin-bottom: 40px;
+    }
+
+    &__photo {
+      padding-bottom: 20px;
+    }
+
+    &__name {
+      padding-bottom: 20px;
+      font-size: 15px;
+    }
+
+    &_position {
+      padding-bottom: 10px;
+      font-size: 14px;
+
+      &::before {
+        top: -10px;
+      }
+    }
+
+    &__icon-wrapper {
+      margin: 0 4px;
+    }
+  }
+}

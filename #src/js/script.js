@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   @@include('scrollTop.js')
   @@include('inputmask.min.js')
   @@include('form.js')
+  @@include('timer.js')
 
 });
 

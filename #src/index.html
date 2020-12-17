@@ -8,6 +8,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="img/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 
 <body class="main_body">
@@ -93,9 +95,11 @@
     <section id="about" class="about">
       <div class="about__row">
         <div class="about__text">
-          <div class="about__title title">О НАС</div>
-          <div class="about__subtitle subtitle">Ресторан наивысшего качества</div>
-          <img src="img/decoration.png" alt="decoration" class="decoration">
+          <div class="about__heading heading">
+            <div class="about__title title">О нас</div>
+            <div class="about__subtitle subtitle">Ресторан наивысшего качества</div>
+            <img src="img/decoration.png" alt="decoration" class="decoration">
+          </div>
           <div class="about__description description">
             <p>В то время как мы остаемся верными традиционным рецептам и
               непринужденной атмосферой, наш ресторан стремится
@@ -126,10 +130,271 @@
       </div>
     </section>
 
+    <!-- Benefits -->
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits__row">
+          <div class="benefits__heading heading">
+            <div class="benefits__title title">Наши преимущества</div>
+            <div class="benefits__subtitle subtitle">У нас вы найдете</div>
+            <img src="img/decoration.png" alt="decoration" class="decoration">
+          </div>
+          <div class="benefits__tabs _tabs">
+            <div class="benefits__nav">
+              <div class="benefits__nav-item _tabs-item _active">
+                <i class="fas fa-utensils"></i>
+                <span>Всегда натуральные продукти</span>
+              </div>
+              <div class="benefits__nav-item _tabs-item">
+                <i class="fas fa-user"></i>
+                <span>Профессиональные повара</span>
+              </div>
+              <div class="benefits__nav-item _tabs-item">
+                <i class="fas fa-star"></i>
+                <span>Только качественная продукция</span>
+              </div>
+            </div>
+            <div class="benefits__items">
+              <div class="benefits__item _tabs-block _active description">
+                <p class="benefits__content">
+                  Наши высококвалифицированные и опытные повара являются
+                  экспертами в производстве, приготовлении и презентации наших блюд
+                  из морепродуктов.
+                </p>
+                <p class="benefits__content">
+                  Наш ресторан расширяется до новой модели ресторанов с полным спектром услуг, предлагая развлечения не
+                  только для семей,
+                  но и для взрослых ночей.
+                </p>
+                <p class="benefits__content">
+                  Мы гордимся тем, что предлагаем одни и те же оригинальные семейные рецепты и продукты по всему
+                  региону,
+                  где бы вы ни
+                  находились. Мы обслуживаем мероприятия любого масштаба, чтобы обеспечить незабываемые впечатления от
+                  ужина благодаря
+                  высокому качеству и возможному элитному обслуживанию.
+                </p>
+              </div>
+              <div class="benefits__item _tabs-block description">
+                <p class="benefits__content">
+                  Наш ресторан расширяется до новой модели ресторанов с полным спектром услуг, предлагая развлечения не
+                  только для семей,
+                  но и для взрослых ночей.
+                </p>
+                <p class="benefits__content">
+                  Мы гордимся тем, что предлагаем одни и те же оригинальные семейные рецепты и продукты по всему
+                  региону,
+                  где бы вы ни
+                  находились. Мы обслуживаем мероприятия любого масштаба, чтобы обеспечить незабываемые впечатления от
+                  ужина благодаря
+                  высокому качеству и возможному элитному обслуживанию.
+                </p>
+                <p class="benefits__content">
+                  Наши высококвалифицированные и опытные повара являются экспертами в производстве, приготовлении и
+                  презентации наших блюд
+                  из морепродуктов.
+                </p>
+              </div>
+              <div class="benefits__item _tabs-block description">
+                <p class="benefits__content">
+                  Мы гордимся тем, что предлагаем одни и те же оригинальные семейные рецепты и продукты по всему
+                  региону,
+                  где бы вы ни
+                  находились. Мы обслуживаем мероприятия любого масштаба, чтобы обеспечить незабываемые впечатления от
+                  ужина благодаря
+                  высокому качеству и возможному элитному обслуживанию.
+                </p>
+                <p class="benefits__content">
+                  Наши высококвалифицированные и опытные повара являются экспертами в производстве, приготовлении и
+                  презентации наших блюд
+                  из морепродуктов.
+                </p>
+                <p class="benefits__content">
+                  Наш ресторан расширяется до новой модели ресторанов с полным спектром услуг, предлагая развлечения не
+                  только для семей,
+                  но и для взрослых ночей.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Promotion -->
+    <section class="promotion">
+      <div class="container">
+        <div class="promotion__row">
+          <div class="promotion__heading heading">
+            <div class="promotion__title title">Скидка 20% для новых клиентов!</div>
+            <div class="promotion__subtitle subtitle">Осталось до конца акции:</div>
+          </div>
+          <div class="promotion__timer">
+            <div class="timer">
+              <div class="timer__block">
+                <span class="timer__value" id="days">12</span>
+                <span class="timer__property">дней</span>
+              </div>
+              <div class="timer__colon">:</div>
+              <div class="timer__block">
+                <span class="timer__value" id="hours">20</span>
+                <span class="timer__property">часов</span>
+              </div>
+              <div class="timer__colon">:</div>
+              <div class="timer__block">
+                <span class="timer__value" id="minutes">56</span>
+                <span class="timer__property">минут</span>
+              </div>
+              <div class="timer__colon">:</div>
+              <div class="timer__block">
+                <span class="timer__value" id="seconds">20</span>
+                <span class="timer__property">секунд</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Team -->
+    <section class="team">
+      <div class="container">
+        <div class="team__row">
+          <div class="team__heading heading">
+            <div class="team__title title">Наша команда</div>
+            <div class="team__subtitle subtitle">Профессионалы своего дела</div>
+            <img src="img/decoration.png" alt="decoration" class="decoration">
+          </div>
+          <div class="team__cards">
+            <div class="team__card">
+              <div class="team__photo">
+                <img src="img/team-img01.jpg" alt="team">
+              </div>
+              <div class="team__name">АДРИАНО РОМАНО</div>
+              <div class="team_position">Шеф-повар</div>
+              <div class="team__social">
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </div>
+            </div>
+            <div class="team__card">
+              <div class="team__photo">
+                <img src="img/team-img02.jpg" alt="team">
+              </div>
+              <div class="team__name">АНЖЕЛА МОРЕТТИ</div>
+              <div class="team_position">Шеф-кондитер</div>
+              <div class="team__social">
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </div>
+            </div>
+            <div class="team__card">
+              <div class="team__photo">
+                <img src="img/team-img03.jpg" alt="team">
+              </div>
+              <div class="team__name">МАРКО ЭСПОЗИТО</div>
+              <div class="team_position">Су-шеф</div>
+              <div class="team__social">
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </div>
+            </div>
+            <div class="team__card">
+              <div class="team__photo">
+                <img src="img/team-img04.jpg" alt="team">
+              </div>
+              <div class="team__name">КАРМЕЛА ГРЕКО</div>
+              <div class="team_position">Су-шеф</div>
+              <div class="team__social">
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="team__icon-wrapper">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
+    <!-- Reservation -->
+    <section class="reservation">
+      <div class="container">
+        <div class="reservation__row">
+          <div class="reservation__wrapper">
+            <div class="reservation__text">
+              <div class="reservation__title title">Резервирование стола</div>
+              <div class="reservation__desription description">Забронировать столик онлайн очень просто и занимает всего
+                пару минут.</div>
+            </div>
+            <div class="reservation__form-wrapper">
+              <form class="reservation__form" method="POST" action="#">
+                <div class="form__group">
+                  <input class="form-input contact-name _req" id="reservation-name" type="text" name="name"
+                    data-value="" placeholder="Полное имя*">
+                  <span class="form-field-error">Поле, обязательное для заполнения</span>
+                </div>
+                <div class="form__group">
+                  <input class="form-input contact-phone _req _phone" id="reservation-phone" type="tel" name="phone"
+                    data-value="" placeholder="Телефонный номер*">
+                  <span class="form-field-error">Поле, обязательное для заполнения</span>
+                </div>
+                <div class="form__group">
+                  <input class="form-input contact-date _req" id="reservation-date" type='date' name="date"
+                    data-value="">
+                  <span class="form-field-error">Поле, обязательное для заполнения</span>
+                </div>
+                <div class="form__group">
+                  <textarea class="form-input _req" name="msg" id="msg" rows="4" style="resize: none" data-value=""
+                    placeholder="Комментарии"></textarea>
+                </div>
+                <div class="form__group">
+                  <button class="reservation__btn btn" type="submit">Забронировать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 

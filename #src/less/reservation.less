@@ -1,0 +1,140 @@
+.reservation {
+  background-image: url('../img/reservation-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    padding: 0 10px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__wrapper {
+    background-color: rgba(1, 1, 1, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 110px 20px;
+  }
+
+  &__text {
+    text-align: center;
+    padding-bottom: 45px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-family: @fontOswald;
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 1.9;
+  }
+
+  &__desription {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+  }
+
+  &__form-wrapper {
+    width: 80%;
+    padding: 0 10%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    .form__group {
+      margin-bottom: 3px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .form-input {
+      max-width: 440px;
+      width: 100%;
+      color: #777777;
+      background-color: #ffffff;
+      font-weight: 500;
+      padding: 18px 28px;
+      text-align: center;
+      border: 1px solid transparent;
+      font-size: 14px;
+      line-height: 22px;
+      border-radius: 2px;
+    }
+
+    .form-field-error {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #d10c0c;
+      font-weight: 500;
+      font-size: 8px;
+      padding: 5px;
+    }
+  }
+
+  &__btn {
+    margin-top: 7%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .reservation {
+    .container {
+      padding: 0;
+    }
+
+    &__row {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+    }
+
+    &__wrapper {
+      padding: 50px 20px;
+    }
+
+    &__text {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .reservation {
+    &__row {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__wrapper {
+      padding: 35px 20px;
+    }
+
+    &__form-wrapper {
+      width: 85%;
+      padding: 0 11%;
+    }
+
+    &__text {
+      padding-bottom: 20px;
+    }
+
+    &__form {
+      .form-input {
+        padding: 15px 15px;
+        font-size: 13px;
+      }
+    }
+  }
+}
