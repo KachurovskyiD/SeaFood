@@ -9,6 +9,8 @@ window.addEventListener('DOMContentLoaded', () => {
   @@include('inputmask.min.js')
   @@include('form.js')
   @@include('timer.js')
+  @@include('counter.js')
+
 
 });
 
