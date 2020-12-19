@@ -1,6 +1,7 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
+  @@include('scroll.js')
   @@include('preloader.js')
   @@include('webp.js')
   @@include('tabs.js')
@@ -10,6 +11,9 @@ window.addEventListener('DOMContentLoaded', () => {
   @@include('form.js')
   @@include('timer.js')
   @@include('counter.js')
+  @@include('offer.js')
+ 
+
 
 
 });
