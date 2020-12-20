@@ -1,3 +1,132 @@
-@media (max-width: 1040px) {}
+.reviews {
+  background-image: url('../img/review-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
-@media (max-width: 767px) {}
+  &__row {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    background-color: rgba(1, 1, 1, 0.57);
+    border: 2px solid #ffffff;
+    padding: 35px 7%;
+    min-width: 0;
+  }
+
+  .reviews__icon {
+    display: block;
+    position: absolute;
+    color: @orangeColor;
+    font-size: 70px;
+    opacity: 0.3;
+    left: 45%;
+    top: 0;
+  }
+
+  &__slider-wrapper {
+    max-width: 600px;
+  }
+
+  &__slide {
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .slide {
+
+      &__text {
+        font-weight: 400;
+        font-style: italic;
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 1.4;
+        padding-bottom: 20px;
+      }
+
+      &__name {
+        font-weight: 400;
+        font-family: @fontOswald;
+        color: #ffffff;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-bottom: 5%;
+      }
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 24px;
+    height: 5px;
+    background: #ffffff;
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: @orangeColor;
+  }
+}
+
+@media (max-width: 1040px) {
+  .reviews {
+    &__row {
+      display: flex;
+      justify-content: center;
+    }
+
+    .slide {
+      &__text {
+        font-size: 16px;
+      }
+
+      &__name {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews {
+    background-position-x: center;
+
+    &__content {
+      background-color: rgba(1, 1, 1, 0.57);
+      border: 2px solid #ffffff;
+      padding: 50px 7%;
+      min-width: 0;
+    }
+
+    .reviews__icon {
+      display: none;
+    }
+
+    &__slider-wrapper {
+      max-width: 600px;
+    }
+
+    &__slide {
+      padding: 10px 10px 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .slide {
+
+        &__text {
+          font-size: 14px;
+          padding-bottom: 30px;
+        }
+
+        &__name {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

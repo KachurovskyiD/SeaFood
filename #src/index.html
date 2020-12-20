@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="img/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body class="main_body">
@@ -717,6 +719,62 @@
       </div>
     </section>
 
+    <!-- Reviews -->
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__row">
+          <div class="reviews__content">
+            <div class="swiper-container reviews__slider">
+              <i class="reviews__icon fas fa-quote-left"></i>
+              <div class="swiper-wrapper reviews__slider-wrapper">
+                <div class="swiper-slide reviews__slide">
+                  <div class="slide__text">«Ресторан предлагает широкий выбор блюд даже для очень привередливых
+                    клиентов! Таких как я. Но я нашла то, что давно искала - сервис и качество!»</div>
+                  <div class="slide__name">Анна</div>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <div class="slide__text">«Я постоянный клиент этого заведения уже много лет. Ни разу у меня не было
+                    неприятного опыта. А блюда всегда вкусные и свежие."</div>
+                  <div class="slide__name">Филлип</div>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <div class="slide__text">«Цены такие же хорошие, как и меню! Каждый раз я трачу меньше денег, чем
+                    где-либо еще, и получаю свежий, вкусный, домашний ужин!"</div>
+                  <div class="slide__name">Артур</div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__row">
+          <div class="gallery__heading heading">
+            <div class="gallery__title title">Галерея</div>
+            <div class="gallery__subtitle subtitle">Кулинария - это искусство</div>
+            <img src="img/decoration.png" alt="decoration" class="decoration">
+          </div>
+          <div class="gallery__wrapper grid _gallery">
+            <div class="grid-sizer"></div>
+            <a href="img/gallery-img01.jpg" class="grid-item"><img src="img/gallery-img01.jpg" alt="gallery"></a>
+            <a href="img/gallery-img02.jpg" class="grid-item"><img src="img/gallery-img02.jpg" alt="gallery"></a>
+            <a href="img/gallery-img03.jpg" class="grid-item"><img src="img/gallery-img03.jpg" alt="gallery"></a>
+            <a href="img/gallery-img04.jpg" class="grid-item"><img src="img/gallery-img04.jpg" alt="gallery"></a>
+            <a href="img/gallery-img05.jpg" class="grid-item"><img src="img/gallery-img05.jpg" alt="gallery"></a>
+            <a href="img/gallery-img06.jpg" class="grid-item"><img src="img/gallery-img06.jpg" alt="gallery"></a>
+            <a href="img/gallery-img07.jpg" class="grid-item"><img src="img/gallery-img07.jpg" alt="gallery"></a>
+            <a href="img/gallery-img08.jpg" class="grid-item"><img src="img/gallery-img08.jpg" alt="gallery"></a>
+            <a href="img/gallery-img09.jpg" class="grid-item"><img src="img/gallery-img09.jpg" alt="gallery"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 
 
@@ -731,6 +789,11 @@
 
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Swiper.js -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Masonry gallery -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
   <!-- Main script -->
   <script src="js/script.min.js"></script>
 

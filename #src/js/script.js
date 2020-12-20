@@ -1,6 +1,7 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
+  @@include('lightgallery.min.js')
   @@include('scroll.js')
   @@include('preloader.js')
   @@include('webp.js')
@@ -12,7 +13,10 @@ window.addEventListener('DOMContentLoaded', () => {
   @@include('timer.js')
   @@include('counter.js')
   @@include('offer.js')
- 
+  @@include('swipe-slider.js')
+  @@include('masonry.js')
+  @@include('gallery.js')
+
 
 
 
