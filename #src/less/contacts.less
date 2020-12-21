@@ -1,3 +1,132 @@
-@media (max-width: 1040px) {}
+.contacts {
 
-@media (max-width: 767px) {}
+  &__img {
+    background-image: url('../img/contacts-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-position-y: center;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 90px 0px 90px 35%;
+  }
+
+  &__heading {
+    padding-bottom: 25px;
+  }
+
+
+  &__form-wrapper {
+    width: 80%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    .form__group {
+      margin-bottom: 3px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      border: 1px solid #777777;
+      border-radius: 2px;
+    }
+
+    .form-input {
+      max-width: 440px;
+      width: 100%;
+      color: #777777;
+      background-color: #ffffff;
+      font-weight: 500;
+      padding: 18px 10px;
+      border: 1px solid transparent;
+      font-size: 14px;
+      line-height: 22px;
+      border-radius: 2px;
+    }
+
+    .form-field-error {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #d10c0c;
+      font-weight: 500;
+      font-size: 8px;
+      padding: 5px;
+    }
+  }
+
+  &__btn {
+    margin-top: 7%;
+  }
+}
+
+@media (max-width: 1040px) {
+  .contacts {
+    &__wrapper {
+      padding: 60px 0px 60px 15%;
+    }
+
+    &__form {
+      .form-input {
+        padding: 18px 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+
+    &__img {
+      min-height: 300px;
+      background-position-x: center;
+      background-position-y: center;
+    }
+
+    &__row {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 5% 20px;
+    }
+
+    &__heading {
+      text-align: center;
+    }
+
+
+    &__form {
+      .form-input {
+        max-width: 440px;
+        width: 100%;
+        color: #777777;
+        background-color: #ffffff;
+        font-weight: 500;
+        padding: 18px 15px;
+        border: 1px solid transparent;
+        font-size: 14px;
+        line-height: 22px;
+        border-radius: 2px;
+      }
+    }
+  }
+}
