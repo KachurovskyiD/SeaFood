@@ -17,8 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   @@include('masonry.js')
   @@include('gallery.js')
   @@include('header-burger.js')
-
-
+  @@include('popup.js')
 
 });
 

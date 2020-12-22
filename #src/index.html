@@ -11,7 +11,6 @@
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 
 <body class="main_body">
@@ -25,7 +24,9 @@
   <div class="wrapper">
 
     <!-- Scroll top -->
-    <a href="#poster" class="scroll-top" hidden><i class="fas fa-chevron-up"></i></a>
+    <a href="#poster" class="scroll-top" hidden>
+      <i class="fas fa-chevron-up"></i>
+    </a>
 
     <!-- Header -->
     <header class="header">
@@ -88,7 +89,7 @@
           <div class="poster__subtitle">
             Pыба и морепродукты для всех, кто их любит!
           </div>
-          <button class="poster__btn btn">Посмотреть меню</button>
+          <a href="#menu" class="poster__btn btn">Посмотреть меню</a>
         </div>
       </div>
     </section>
@@ -126,7 +127,7 @@
           <div class="banner__wrapper">
             <div class="banner__title subtitle">Лучший ресторан морепродуктор! <br>
               Не верите? Попробуйте сами!</div>
-            <button class="banner__btn btn">Заказать звонок</button>
+            <a href="#banner-cb" class="banner__btn btn _popup-link">Заказать звонок</a>
           </div>
         </div>
       </div>
@@ -380,12 +381,12 @@
                   <span class="form-field-error">Поле, обязательное для заполнения</span>
                 </div>
                 <div class="form__group">
-                  <input class="form-input contact-date _req" id="reservation-date" type='date' name="date"
-                    data-value="">
+                  <input class="form-input contact-date _req" value="2021-01-01" id="reservation-date" type='date'
+                    name="date" data-value="">
                   <span class="form-field-error">Поле, обязательное для заполнения</span>
                 </div>
                 <div class="form__group">
-                  <textarea class="form-input _req" name="msg" id="msg" rows="4" style="resize: none" data-value=""
+                  <textarea class="form-input" name="msg" id="msg" rows="4" style="resize: none" data-value=""
                     placeholder="Комментарии"></textarea>
                 </div>
                 <div class="form__group">
@@ -459,7 +460,7 @@
               <div class="counter__icon">
                 <img src="img/counter-icon01.png" alt="counter-icon">
               </div>
-              <div data-num="70" class="counter__value number">0</div>
+              <div data-num="147" class="counter__value number">0</div>
               <div class="counter__text">Блюд</div>
             </div>
             <div class="counter__item">
@@ -473,7 +474,7 @@
               <div class="counter__icon">
                 <img src="img/counter-icon03.png" alt="counter-icon">
               </div>
-              <div data-num="450" class="counter__value number">0</div>
+              <div data-num="410" class="counter__value number">0</div>
               <div class="counter__text">Отзывов</div>
             </div>
             <div class="counter__item">
@@ -853,12 +854,42 @@
       </div>
     </footer>
 
+    <!-- Popup -->
+    <div class="popup popup_banner-cb">
+      <div class="popup__content">
+        <div class="popup__body">
+          <div class="popup__row">
+            <div class="popup__heading heading">
+              <div class="popup__title title">Обратный звонок</div>
+              <div class="popup__subtitle description">Мы перезвоним вам в течении 30 секунд</div>
+            </div>
+            <div class="popup__form-wrapper">
+              <form class="popup__form" method="POST" action="#">
+                <div class="form__group">
+                  <input class="form-input contact-name _req" id="popup-name" type="text" name="name" data-value=""
+                    placeholder="Полное имя*">
+                  <span class="form-field-error">Поле, обязательное для заполнения</span>
+                </div>
+                <div class="form__group">
+                  <input class="form-input contact-phone _req _phone" id="popup-phone" type="tel" name="phone"
+                    data-value="" placeholder="Телефонный номер*">
+                  <span class="form-field-error">Поле, обязательное для заполнения</span>
+                </div>
+                <button class="popup__btn btn" type="submit">Забронировать</button>
+              </form>
+            </div>
+          </div>
+          <div class="popup__close"></div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal -->
-    <!-- <div class=" modal">
+    <div class=" modal">
       <div class="modal__dialog">
         <div class="modal__content"></div>
       </div>
-    </div> -->
+    </div>
 
   </div>
 
